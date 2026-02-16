@@ -11,8 +11,8 @@
 9. git checkout master = (significa cambiarte a la rama master en tu repositorio Git.)
 10. git merge ejemplo-rama = (significa que quieres combinar los cambios de la rama ejemplo-rama dentro de la rama en la que estás actualmente.)
 11. git branch -d ejemplo-rama =(significa que quieres eliminar la rama local llamada ejemplo-rama.)  
-12. git push = 
-13. git branch = 
+12. git push = es un comando de Git, que se utiliza para enviar los cambios locales de tu repositorio a un repositorio remoto. Básicamente, es la forma de actualizar el repositorio en línea (por ejemplo en GitHub, GitLab o Bitbucket) con los commits que tienes en tu máquina.
+13. git branch = es un comando de Git que se usa para administrar ramas dentro de un repositorio. Las ramas te permiten trabajar en diferentes versiones de tu proyecto de forma paralela, sin afectar la rama principal (main o master).
 14. git push origin master = si te aparece un mensaje [On branch master nothing to commit, working tree clean] resuelvo con [git push origin master].
 - [cuando aparezca,[The most similar command is commit]] es por escribir mal el comando [commit].
 - (Please make sure you have the correct access rights and the repository exists.), significa que Git no puede acceder al repositorio remoto. Normalmente aparece cuando haces: git push
@@ -138,14 +138,30 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 
 # segundo ejercicio 
-realice cambios en visual estudio code, pero no se reflejan en git. 
-1.. aplico: [git add .]
-2.. aplico: [git commit -m]
+
+realice cambios en visual estudio code, pero no se reflejan en git.
+ 
+1. aplico: [git add .]
+2. aplico: [git commit -m]
 la respuesta es: On branch main
 Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean[No hay nada que "resolver". Git te está diciendo que:✔ No hiciste cambios
                                      ✔ No hay archivos nuevos
                                      ✔ Todo está actualizado]
-3.. aplico: [git push origin main] me aparecio, Everything up-to-dat, significa que Git no encontró cambios nuevos en tu rama main que necesiten ser enviados al repositorio remoto (origin). En otras palabras, tu repositorio local y el remoto ya están sincronizados.
+3. aplico: [git push origin main] me aparecio, Everything up-to-dat, significa que Git no encontró cambios nuevos en tu rama main que necesiten ser enviados al repositorio remoto (origin). En otras palabras, tu repositorio local y el remoto ya están sincronizados.
 Algunas razones comunes para que esto ocurra:
-1.. No has hecho commits nuevos, Revisa tus cambios con:[git status], aplique, git status y sigue sin subir los cambios en git
+
+1. No has hecho commits nuevos, Revisa tus cambios con:[git status], aplique, git status y sigue sin subir los cambios en git.
+A veces, los cambios en VS Code no se han guardado antes de hacer git add . :
+Revisa que todos los archivos estén guardados (Ctrl + S o Cmd + S).Luego vuelve a correr: [git status
+git add . 
+git commit -m "Mis cambios" 
+git push origin main],
+los aplique y funciono
+
+Ver cambios no commiteados en archivos rastreados:[git diff --name-only]
+Ver archivos nuevos no rastreados:[git ls-files --others --exclude-standard]
+Ver si archivos están siendo ignorados:[git check-ignore -v *]
+Archivos modificados:[git diff --name-only]
+Archivos nuevos no rastreados:[git ls-files --others --exclude-standard]
+Archivos ignorados:[git check-ignore -v *]
