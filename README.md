@@ -16,6 +16,6 @@
 - git push origin master
 - git checkout ejemplo-rama
 
-> ###git init: es un comando de Git que sirve para crear un nuevo repositorio Git en una carpeta de tu computadora.
+### git init: es un comando de Git que sirve para crear un nuevo repositorio Git en una carpeta de tu computadora.
 
 
