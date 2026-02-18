@@ -32,15 +32,17 @@
 # git push origin: es un comando de Git que se usa para enviar (subir) tus cambios locales a un repositorio remoto.
 # git checkout : es un comando de Git que se usa para cambiar de rama o restaurar archivos a una versión anterior.
 
+![](![WhatsApp Image 2026-02-17 at 3 17 59 PM](https://github.com/user-attachments/assets/730f9fe8-6129-4cea-bedb-06577495af24))
+
 ### Comandos para levantar el proyecto
-"npm install
-npm run build:web
-npm run serve:web
-# Abrir: http://localhost:5500/src/index.html"
+-npm install
+-npm run build:web
+-npm run serve:web
+# Abrir: http://localhost:5500/src/index.html
 
 # cuando el puerto 5500 ya está siendo usado por otro proceso o terminal (probablemente otro servidor que ya está corriendo en otra terminal).
 utlizo el el comando . "netstat -ano | findstr :5500" para detener el puerto 5500 en uso al ejecutar-----me devuelve una respuesta como esta "TCP    0.0.0.0:5500     0.0.0.0:0     LISTENING     1234" 
-cambio el numero del LISTENING por el numero del LISTENING  de la terminal.
+ejecuto el siguiente comando " taskkill /PID 1234 /F" cambio el numero del PID por el numero del LISTENING  de la terminal.
 
 
 
