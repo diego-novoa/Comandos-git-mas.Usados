@@ -32,7 +32,7 @@
 # git push origin: es un comando de Git que se usa para enviar (subir) tus cambios locales a un repositorio remoto.
 # git checkout : es un comando de Git que se usa para cambiar de rama o restaurar archivos a una versión anterior.
 
-![](![WhatsApp Image 2026-02-17 at 3 17 59 PM](https://github.com/user-attachments/assets/730f9fe8-6129-4cea-bedb-06577495af24))
+![](https://github.com/user-attachments/assets/730f9fe8-6129-4cea-bedb-06577495af24))
 
 ### Comandos para levantar el proyecto
 -npm install
